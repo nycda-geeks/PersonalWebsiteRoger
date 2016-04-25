@@ -1,25 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<title>Personal Website - About Page</title>
-	<link rel=stylesheet href="style.css">
-	<meta charset="utf-8"> 
+	<title>Personal Website - Roger Dering</title>
+	<script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!meta charset utf="8">
+	<link href="css/flexslider.css" rel='stylesheet' type='text/css' />
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Coda:400,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+			});
+		});
+	</script>
 </head>
 <body>
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="contact.html">Contact</a></li>
-		<li><a class="active" href="about.html">About</a></li>
-
-	</ul>
-
-	<div style="padding:10px;height:1500px;">
-		<h1>About</h1>
-		<h2>Scroll this page to see the effect</h2>
-		<h2>The navigation bar will stay at the bottom of the page while scrolling</h2>
-
-		<p>Some text some text some text some text..</p>
-
-		<script src="javascript.js"></script>
-	</body>
-	</html>
+	<div class="header" id="home">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Roger Dering</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right margin-top cl-effect-2">
+						<li><a href="index.html"><span data-hover="Home">Home</span></a></li>
+						<li><a href="about.html"><span data-hover="About">About</span></a></li>
+						<li><a href="contact.html"><span data-hover="Contact">Contact</span></a></li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</nav>
+		<div class="about-page">
+			<div class="about">
+				<h3>About</h3>
+				<div class="container">	
+					<div class="col-md-4 awrd">
+						<h4>Awards</h4>
+						<div class="awd-icn-txt">
+							<div class="col-md-3 awd-icn">
+								<span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+							</div>
+							<div class="col-md-9 awd-txt">
+								<h4>Lorem Ipsum has been the industry's</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="awd-icn-txt">
+							<div class="col-md-3 awd-icn">
+								<span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+							</div>
+							<div class="col-md-9 awd-txt">
+								<h4>Lorem Ipsum has been the industry's</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="awd-icn-txt">
+							<div class="col-md-3 awd-icn">
+								<span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+							</div>
+							<div class="col-md-9 awd-txt">
+								<h4>Lorem Ipsum has been the industry's</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-8 wh-we">
+						<h4>Who am I</h4>
+						<div class="col-md-4 txt0">
+							<h5>Roger Kevin Dering </h5>
+							<P>personal bio</P>
+								<button type="button" class="btn btn-info mrg">Read more</button>
+							</div>
+							<div class="col-md-8 txt0">
+								<img src="./images/office.jpg" alt="" class="img-responsive"/>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container">
+					<div class="social">
+						<ul>
+							<li><a href="#" class="face"></a></li>
+							<li><a href="#" class="twit"></a></li>
+							<li><a href="#" class="insta"></a></li>
+							<li><a href="#" class="gplus"></a></li>
+							<li><a href="#" class="dribl"></a></li>
+						</ul>
+					</div>
+					<div class="copy-rt">
+						<p>&#169; 2015 Archer Design by <a href="http://www.w3layouts.com" target="_blank">w3layouts</a></p>
+					</div>
+				</div>
+			</div>
+			<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		</body>
+		</html>

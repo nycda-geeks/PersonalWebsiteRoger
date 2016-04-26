@@ -420,7 +420,7 @@ span.gal-icn {
 .b-from-left{
 	position: relative;
 	left: -350px;
-	background: rgba(216, 11, 54, 0.69);
+	background: rgba(0, 21, 71, 0.7);
 	background-size: 100% 100%;
 	top: 0px;
 	margin: 0;
@@ -727,9 +727,9 @@ ul.wmuSliderPagination {
 }
 .awrd h4,.wh-we h4{
 	text-align: left;
-	font-family: 'Jockey One', sans-serif;
+	font-family: "Prime Regular", Prime, opentype;
 	font-weight: 300;
-	color: #00BFF3;
+	color: #0B0354;
 	font-size: 1.7em;
 	margin-bottom:20px;
 }
@@ -749,13 +749,13 @@ ul.wmuSliderPagination {
 .txt0 h5 {
 	line-height: 1.6em;
 	text-align: left;
-	color: #D80B36;
+	color: #0677b3;
 	font-weight: 600;
 	font-size: 14px;
 	text-transform: capitalize;
 	margin-bottom: 15px;
 	padding: 0 !important;
-	font-family: 'OpenSans-Regular';
+	font-family: Arial, Helvetica, sans-serif;
 }
 .txt0 p {
 	text-align: left;
@@ -778,13 +778,13 @@ ul.wmuSliderPagination {
 }
 .awd-txt h4{
 	text-align: left;
-	color: #D80B36;
+	color: #0677b3;
 	font-weight: 600;
 	font-size: 14px;
 	text-transform: capitalize;
 	margin-bottom: 15px;
 	padding: 0 !important;
-	font-family: 'OpenSans-Regular';
+	font-family: Arial, Helvetica, sans-serif;
 }
 .awd-txt p{
 	text-align: left;
@@ -868,7 +868,7 @@ code {
 	text-transform:capitalize;
 }
 .about h3,.our-team h3,.test-monials h3  {
-	font-family: "Prime Light", Prime, opentype;
+	font-family: "Prime Regular", Prime, opentype;
 	font-weight: 100;
 	color: #0B0354;
 	font-size: 3em;
@@ -959,7 +959,7 @@ li.col-md-3.gal-alt {
 	padding:3em 0em;
 }
 .contact_page h3 {
-	font-family: "Prime Light", Prime, opentype;
+	font-family: "Prime Regular", Prime, opentype;
 	font-weight: 100;
 	color: #0B0354;
 	font-size: 3em;
@@ -972,9 +972,9 @@ li.col-md-3.gal-alt {
 }
 .cnt-pg h4{
 	text-align: left;
-	font-family: 'Jockey One', sans-serif;
+	font-family: "Prime Regular", Prime, opentype;
 	font-weight: 300;
-	color: #00BFF3;
+	color: #0B0354;
 	font-size: 1.7em;
 	margin-bottom: 20px;
 }
@@ -986,12 +986,12 @@ li.col-md-3.gal-alt {
 .cnt-pg ul li{
 	padding:0;
 	text-align: left;
-	color: #D80B36;
+	color: #0677b3;
 	font-weight: 600;
 	font-size: 14px;
 	text-transform: capitalize;
 	margin-bottom: 15px;
-	font-family: 'OpenSans-Regular';
+	font-family: Arial, Helvetica, sans-serif;
 }
 .glyphicon.glyphicon-phone-alt{
 	color: #0B0354;

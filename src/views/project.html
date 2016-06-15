@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+<body>
+	<h2>VERY rough outline of a interactive book format I'm working on. I'll go cyberpunk themed for a longer version.</h2>
+	<h3>Jones looks over the body in the alleyway. it was unmistakably his old partner, O'Connor. They hadn't spoken in a while.</h3>
+	<button type="button" id="option1">Call it in.</button>
+	<button type="button" id="option2">Search the body yourself</button>
+
+	<div id="consequence1">
+		<p>Jones dials the number of the policestation. You make the receptionist understand that an ex-cop has been murdered and this top-priority. </p>
+		<button type="button" id="option3">Be honest</button>
+		<button type="button" id="option4">Lie</button>
+	</div>
+	<div id="consequence2">
+		<p>You are able to retrieve her wallet, and various other pocketcontents. After careful looking around you come across a slug, .45. You'd need to get it too forensics to get anymore information from it.</p>
+		<button type="button" id="option5">Go to police station.</button>
+		<button type="button" id="option6">Call your contact.</button>
+	</div>
+	<div id="consequence3">
+		<p>The receptionist understands the situation and you wait a for a investigative team to arrive. They question you further, but eventually are let go. The detective advises you to go home and not to concern yourself with the inevstigation any further.</p>
+		<button type="button" id="option7">Go home.</button>
+		<button type="button" id="option8">Find a quiet alleyway and call O'Connor's roommate before the police can get to her.</button>
+	</div>
+	<div id="consequence4">
+		<p>You input several details into your story that makes it seem like your personal contacts, who you are unwilling to disclose, are going to be vital to this investigation. You are so obtuse, the investigator resolves to take you back to the station, so one of the old guard, who are more familiar with you can be tasked with sorting you out. You arrive at the police station.</p>
+		<button type="button" id="option9">You let your old friend Captain Dafferty, in on what went down with O'Connor.</button>
+		<button type="button" id="option10">You utilise a bathroom break to ditch your escort so as get free access to the offices.</button>
+	</div>
+	<div id="consequence5">
+		<p>You use the phonebooth near the station to get one of the labrats, Doyle to meet you outside. You trust Doyle, or rather, you know he doesn't have the guts to screw you over and would do anything to make you feel he doesn't owe you any favors anymore.</p>
+		<button type="button" id="option11">Give the slug to Doyle for testing.</button>
+		<button type="button" id="option12">Be non-descript about what you are working on. Squeeze him for information on any current investigation that might be relevant.</button>
+	</div>
+	<div id="consequence6">
+		<p>Daryl works at the gunstore on 27th and 5th. He has his finger in so many pots, if the gun is fairly recently bought, he can find it. You meet with him and give him the slug. You arrange to meet up for results at Carver's Bar next Thursday. Meanwhile you got several leads you can look up on at your leisure.</p>
+		<button type="button" id="option13">Go to O'Connors apartment</button>
+		<button type="button" id="option14">Go threaten the latest entry into her poor dating history for info.</button>
+	</div>
+	<div id="consequence7">
+		<p>You push your way into your own apartment and decide to have a drink or 12 in O'Connor's memories. About a quarter past midnight the door your forgot to lock gets opened. Long before you are able to get your own gun out of it's holster, a man in a overcoat and wearing a hat obscuring his face guns you down.</p>
+	</div>
+	<div id="consequence8">
+		<p>As you are talking with Cynthia, you hear footsteps coming up behind you. Off course the killer kept an eye on the crime scene from a distance and saw you leave! You reach for your gun and point at the man behind you without a moments hesitation. You are able to get your shots off but the killer as a good a shot as you are. You both go down.</p>
+	</div>
+	<div id="consequence9">
+		<p>Dafferty takes the information in like a pro. He knows that the surest way of solving the case is keeping the police and your own investigation seperate, with him being the only contact in between. You go through some of O'Connor old stuff from storage. No way what is the best lead on what kind of trouble she got herself into.</p>
+	</div>
+	<div id="consequence10">
+		<p>You find Detective Murphy. He won't know the manner by which you found yourself at the station. After sitting down at his desk and extracting everything he knows about current investigation over a few innocent drinks and smokes, you zero in on what made for the best lead. A head honcho in the human trafficking biz is being tried by the DA. O'Connor made a point of fabricating evidence to make charges stick whenever they came across that kinda stuff, back when you both were still on the force. She would've been called in a witness sooner or later. His consigliere, his wife, his muscle, you knew the people who'd get you the name of the killer. You had a lot of stops to make.</p>
+	</div>
+	<div id="consequence11">
+		<p>Doyle promises results two days later. In the meanwhile you looked up O'Connors loved ones. None of them knew what happened yet. And there was nothing suspicious about you coming to talk to her. Yet all the same her roommate was apprehensive about letting you in. By the time you made it up the fireescape, she was in the elevator down. A car stopped in front of the apartment to snatch your best lead out right from under you.</p>
+	</div>
+	<div id="consequence12">
+		<p>The info you needed him dropped out of him easy as day. It was drugs, same as always.</p>
+	</div>
+	<div id="consequence13">
+		<p>Cynthia greets you at the door wearing a bathrobe and with still wet hair but lets you in, no questions asked. O'Connor's bedroom was a mess, same as you remember. Some could've come in, trashed through the place looking to cover up clues and you'd be none the wiser. Cynthia was much more helpful. Over coffee she lets you know everything about O'Connor current life, the old cases she's been contacted about. Before you know it you switch to stronger drinks and she's taking off your pants and what little clothes she had. You don't wake up the next morning.</p>
+	</div>
+	<div id="consequence14">
+		<p>"Bob" was a fine help, both crying about his ex' death and besmirching her memory, giving you a very onesided story on their breakup, long before you steered the conversation in that direction. A complete waste of time.</p>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$("div").hide()
+			$("#option1").click(function(){
+				$("#option1").hide()
+				$("#option2").hide()
+				$("#consequence1").show()
+			})
+			$("#option2").click(function(){
+				$("#option1").hide()
+				$("#option2").hide()
+				$("#consequence2").show()
+			})
+			$("#option3").click(function(){
+				$("#option3").hide()
+				$("#option4").hide()
+				$("#consequence3").show()
+			})
+			$("#option4").click(function(){
+				$("#option3").hide()
+				$("#option4").hide()
+				$("#consequence4").show()
+			})
+			$("#option5").click(function(){
+				$("#option5").hide()
+				$("#option6").hide()
+				$("#consequence5").show()
+			})
+			$("#option6").click(function(){
+				$("#option5").hide()
+				$("#option6").hide()
+				$("#consequence6").show()
+			})
+			$("#option7").click(function(){
+				$("#option7").hide()
+				$("#option8").hide()
+				$("#consequence7").show()
+			})
+			$("#option8").click(function(){
+				$("#option7").hide()
+				$("#option8").hide()
+				$("#consequence8").show()
+			})
+			$("#option9").click(function(){
+				$("#option9").hide()
+				$("#option10").hide()
+				$("#consequence9").show()
+			})
+			$("#option10").click(function(){
+				$("#option10").hide()
+				$("#option11").hide()
+				$("#consequence10").show()
+			})
+			$("#option11").click(function(){
+				$("#option11").hide()
+				$("#option12").hide()
+				$("#consequence11").show()
+			})
+			$("#option12").click(function(){
+				$("#option11").hide()
+				$("#option12").hide()
+				$("#consequence12").show()
+			})
+			$("#option13").click(function(){
+				$("#option13").hide()
+				$("#option14").hide()
+				$("#consequence13").show()
+			})
+			$("#option14").click(function(){
+				$("#option13").hide()
+				$("#option14").hide()
+				$("#consequence14").show()
+			})
+		});
+	</script>
+
+</body>
+</html>

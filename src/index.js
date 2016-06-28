@@ -1,13 +1,23 @@
-var express = require ( 'express')
 var fs = require ( 'fs' )
 var bodyParser = require ( 'body-parser' )
 var jf = require ( 'jf' )
+var express = require ( 'express')
+var sass = require ( 'node-sass' )
+var sassMiddleware = require ( 'node-sass-middleware' )
+var path = require('path');
 var app = express ( )
 
 app.set( 'views', __dirname + '/views' )
 app.engine( 'html', require( 'ejs' ).renderFile )
 
-app.use( express.static( __dirname + '/public' ) )
+app.use(
+ sassMiddleware({
+   src: __dirname + '/sass', 
+   dest: __dirname + '/public/',
+   debug: true      
+ }))
+
+app.use( express.static ( path.join ( __dirname + '/public' ) ) )
 app.use( bodyParser.urlencoded( { extended: false } ) )
 app.use( bodyParser.json ( ) )
 
